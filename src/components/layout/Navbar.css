@@ -1,0 +1,26 @@
+.navbar-brand {
+    font-size: 25px;
+}
+.not-found {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item a {
+    color: rgb(5, 41, 141) !important;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+ .nav-item .active {
+    color: white !important;
+}
+.add-user {
+    width: 100px;
+}
