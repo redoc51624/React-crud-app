@@ -5,22 +5,15 @@ const Contact = () => {
         <div className='container'>
             <div className='py-4'>
                 <h1>Contact page</h1>
-                <form>
-                    <div className="mb-3">
-                        <label for="exampleInputEmail1" className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Card</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Contact details</h6>
+                        <p class="card-text">Contact us with given below text. We will reach you as soon as possible</p>
+                        <a href="#" class="card-link">8084532538</a>
+                        <a href="#" class="card-link">Vikas10145.12bitmesra.ac.in</a>
                     </div>
-                    <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1"/>
                     </div>
-                    <div className="mb-3 form-check">
-                        <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                        <label className="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
-                    </form>
             </div>
         </div>
     );
