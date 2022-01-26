@@ -1,29 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "vic",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
-      "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-          "lat": "-37.3159",
-          "lng": "81.1496"
-        }
-      },
-      "phone": "1-770-736-8031 x56442",
-      "website": "hildegard.org",
-      "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-      }
-    },
-    {
       "id": 2,
       "name": "Ervin Howell",
       "username": "Antonette",
@@ -76,6 +53,22 @@
       "phone": "123123132132",
       "website": "archu.com",
       "id": 5
+    },
+    {
+      "name": "chiku",
+      "username": "chiku123",
+      "email": "chiku@gmail.com",
+      "phone": "123456789",
+      "website": "chiku.com",
+      "id": 6
+    },
+    {
+      "name": "KAWITA KUMARI",
+      "username": "kd123",
+      "email": "vikaskumar94317@gmail.com",
+      "phone": "8084532538",
+      "website": "www.kd.com",
+      "id": 7
     }
   ]
 }

@@ -47,14 +47,12 @@ const Home = () => {
                   <Link
                     class="btn btn-outline-primary mr-2"
                     to={`/users/edit/${user.id}`}
-                  >
-                    Edit
+                  >Edit
                   </Link>
                   <Link
                     class="btn btn-danger"
                     onClick={() => deleteUser(user.id)}
-                  >
-                    Delete
+                  > Delete
                   </Link>
                 </td>
               </tr>
