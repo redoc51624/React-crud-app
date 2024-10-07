@@ -14,6 +14,7 @@ const User = () => {
 
   useEffect(() => {
     loadUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadUser = async () => {
