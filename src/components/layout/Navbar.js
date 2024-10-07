@@ -6,7 +6,7 @@ import {Link, NavLink} from 'react-router-dom';
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className='container'>
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">React User</a>
+              <a class="navbar-brand" href="#">REACT CRUD APP</a>
                 <button class="navbar-toggler" 
                           type="button" 
                           data-bs-toggle="collapse" 
