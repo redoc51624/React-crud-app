@@ -5,6 +5,7 @@ import { useHistory, useParams } from "react-router-dom";
 const EditUser = () => {
   let history = useHistory();
   const { id } = useParams();
+  const url = 'https://citrine-wind-shirt.glitch.me/users';
   const [user, setUser] = useState({
     name: "",
     username: "",
@@ -25,12 +26,12 @@ const EditUser = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.put(`http://localhost:3003/users/${id}`, user);
+    await axios.put(`${url}/${id}`, user);
     history.push("/");
   };
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:3003/users/${id}`);
+    const result = await axios.get(`${url}/${id}`);
     setUser(result.data);
   };
   return (

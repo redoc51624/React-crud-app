@@ -5,6 +5,7 @@ import './AddUser.css';
 
 const AddUser = () => {
   let history = useHistory();
+  const url = 'https://citrine-wind-shirt.glitch.me/users';
   const [user, setUser] = useState({
     name: "",
     username: "",
@@ -20,7 +21,7 @@ const AddUser = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.post("http://localhost:3003/users", user);
+    await axios.post(url, user);
     history.push("/");
   };
   return (

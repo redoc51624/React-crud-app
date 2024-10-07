@@ -11,6 +11,7 @@ const User = () => {
     webiste: ""
   });
   const { id } = useParams();
+  const url = 'https://citrine-wind-shirt.glitch.me/users';
 
   useEffect(() => {
     loadUser();
@@ -18,7 +19,7 @@ const User = () => {
   }, []);
 
   const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3003/users/${id}`);
+    const res = await axios.get(`${url}/${id}`);
     setUser(res.data);
   };
   

@@ -4,18 +4,19 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [users, setUser] = useState([]);
+  const url = 'https://citrine-wind-shirt.glitch.me/users';
 
   useEffect(() => {
     loadUsers();
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:3003/users");
+    const result = await axios.get(url);
     setUser(result.data.reverse());
   };
 
   const deleteUser = async id => {
-    await axios.delete(`http://localhost:3003/users/${id}`);
+    await axios.delete(`${url}/${id}`);
     loadUsers();
   };
 
