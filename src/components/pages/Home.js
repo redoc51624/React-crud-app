@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import './Home.css';
 
 const Home = () => {
   const [users, setUser] = useState([]);
-  const url = 'https://citrine-wind-shirt.glitch.me/users';
+  const url = process.env.REACT_APP_DB_URL;
 
   useEffect(() => {
     loadUsers();
-  }, []);
+  });
 
   const loadUsers = async () => {
     const result = await axios.get(url);
@@ -42,11 +43,11 @@ const Home = () => {
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>
-                  <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>
+                  <Link class="btn btn-secondary mr-2" to={`/users/${user.id}`}>
                     View
                   </Link>
                   <Link
-                    class="btn btn-outline-primary mr-2"
+                    class=" edit-btn btn btn-dark mr-2"
                     to={`/users/edit/${user.id}`}
                   >Edit
                   </Link>

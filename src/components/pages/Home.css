@@ -1,0 +1,9 @@
+.table {
+    box-shadow: 10px 10px 10px !important;
+    border-radius: none !important;
+}
+tr ,td{
+    box-shadow: 5px 5px 5px;
+    margin-top: 5px;
+    border-collapse: collapse;
+}

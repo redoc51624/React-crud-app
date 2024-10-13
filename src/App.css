@@ -4,3 +4,15 @@
 .list-group-item {
     margin-bottom: 20px;
 }
+.edit-btn {
+    margin: 5px;
+}
+.App {
+    background: slategrey;
+}
+
+input ,.list-group-item{
+    background: slategray !important;
+    box-shadow: 10px 10px 10px;
+    text-decoration: none;
+}

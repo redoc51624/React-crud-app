@@ -6,21 +6,22 @@
     top: 0;
     width: 100vw;
     height: 100vw;
-    background-color: grey;
+    background-color: rgb(173, 107, 107);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-item a {
-    color: rgb(5, 41, 141) !important;
     text-decoration: none;
     padding: 5px 10px;
     font-size: 20px;
+    color: grey !important;
 }
  .nav-item .active {
     color: white !important;
 }
 .add-user {
     width: 100px;
+    margin-left: 25px;
 }

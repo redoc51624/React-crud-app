@@ -5,7 +5,7 @@ import './AddUser.css';
 
 const AddUser = () => {
   let history = useHistory();
-  const url = 'https://citrine-wind-shirt.glitch.me/users';
+  const url = process.env.REACT_APP_DB_URL;
   const [user, setUser] = useState({
     name: "",
     username: "",
