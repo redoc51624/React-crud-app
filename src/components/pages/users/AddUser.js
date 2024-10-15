@@ -37,6 +37,7 @@ const AddUser = () => {
               name="name"
               value={name}
               onChange={e => onInputChange(e)}
+              maxLength={15}
             />
           </div>
           <div className="form-group">
@@ -47,6 +48,7 @@ const AddUser = () => {
               name="username"
               value={username}
               onChange={e => onInputChange(e)}
+              maxLength={10}
             />
           </div>
           <div className="form-group">
@@ -57,16 +59,18 @@ const AddUser = () => {
               name="email"
               value={email}
               onChange={e => onInputChange(e)}
+              maxLength={25}
             />
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="tel"
               className="form-control form-control-lg"
               placeholder="Enter Your Phone Number"
               name="phone"
               value={phone}
               onChange={e => onInputChange(e)}
+              maxLength={9}
             />
           </div>
           <div className="form-group">
@@ -77,6 +81,7 @@ const AddUser = () => {
               name="website"
               value={website}
               onChange={e => onInputChange(e)}
+              maxLength={20}
             />
           </div>
           <button className="btn btn-primary btn-block">Add User</button>

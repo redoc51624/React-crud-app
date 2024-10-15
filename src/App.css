@@ -16,3 +16,6 @@ input ,.list-group-item{
     box-shadow: 10px 10px 10px;
     text-decoration: none;
 }
+input:hover {
+    cursor: pointer !important;
+}
